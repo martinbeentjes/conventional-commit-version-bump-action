@@ -15,6 +15,7 @@ try {
   conventionalRecommendedBump({
     preset: `angular`
   }, (error, recommendation) => {
+    console.log(`Error: ${error}`);
     console.log(`Executing a ${recommendation.releaseType} release`);
   });
 
