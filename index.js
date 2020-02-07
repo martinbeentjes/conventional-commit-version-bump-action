@@ -16,6 +16,7 @@ try {
     preset: `angular`
   }, (error, recommendation) => {
     console.log(`Error: ${error}`);
+    console.log(recommendation);
     console.log(`Executing a ${recommendation.releaseType} release`);
   });
 
