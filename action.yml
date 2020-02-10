@@ -1,16 +1,7 @@
 name: 'Conventional Commit - Version Bump'
 description: 'Bump version based upon commit history and original brand'
-inputs:
-    feature-branch:
-        description: 'Branch name for feature releases'
-        required: true
-        default: 'feature'
-    bugfix-branch:
-        description: 'Branchn name for bugfix releases'
-        required: true
-        default: 'bugfix'
 outputs:
-    next-version:
+    next-release-type:
         description: 'New version to release'
 runs:
     using: 'node12'
